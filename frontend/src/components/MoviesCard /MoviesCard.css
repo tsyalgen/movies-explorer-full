@@ -1,0 +1,109 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  background: #2f2f2f;
+  border-radius: 2px;
+}
+
+.card__info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.card__text{
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 20px 0 10px 0;
+}
+
+.card__duration{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  align-items: center;
+  color: #8b8b8b;
+  margin: 0 0 25px 0;
+}
+
+.card__like{
+  background: url('../../images/like.svg');
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 14px;
+  height: 12px;
+}
+
+.card__like_active{
+  background: url('../../images/like-active.svg');
+}
+
+.card__like_type_saved{
+  background: url('../../images/delete.svg');
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 14px;
+  height: 12px;
+}
+
+.card__image{
+  margin: 5px;
+  width: 220px;
+  height: 122px;
+}
+
+@media screen and (max-width: 550px) {
+  .card{
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .card__info{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card__title{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .card__like{
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+
+  .card__like_type_saved{
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+
+  .card__link{
+    align-self: center;
+  }
+
+  .card__image{
+    margin: 0;
+    width: 300px;
+    height: 168px;
+  }
+}

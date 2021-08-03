@@ -1,0 +1,19 @@
+.navtab {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #272727;
+}
+
+.navtab__link{
+  font-family: Inter, serif ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin: auto 20px;
+}

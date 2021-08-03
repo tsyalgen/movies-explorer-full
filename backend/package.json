@@ -1,0 +1,35 @@
+{
+  "name": "movies-explorer-api",
+  "description": "yandex-praktikum diploma project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/tsyalgen/movies-explorer-api.git",
+  "author": "Aleksei Tsybin <tsyalgen@yandex.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint ./"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^14.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "express-winston": "^4.1.0",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.8",
+    "npm": "7.13.0",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3"
+  }
+}

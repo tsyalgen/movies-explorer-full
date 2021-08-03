@@ -1,0 +1,123 @@
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.profile__hello{
+  margin: 70px auto;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.profile__form{
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.profile__item{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.profile__item:first-of-type{
+  border-bottom: solid 1px #424242;
+}
+
+.profile__item:last-of-type{
+  margin-bottom: 200px;
+}
+
+.profile__item_type_text{
+  margin: 0;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.profile__item_type_input{
+  margin: 0;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.profile__item-error_field{
+  color: #ee3465;
+}
+
+.profile__item-error{
+  position: absolute;
+  top: 30px;
+  height: 15px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+}
+
+.profile__edit-button{
+  display: flex;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.profile__edit-button:disabled{
+  color: #424242;
+  cursor: default;
+}
+
+.profile__sign-out{
+  display: flex;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #ee3465;
+}
+
+@media screen and (max-width: 550px) {
+  .profile__form{
+    width: 85%;
+  }
+}
